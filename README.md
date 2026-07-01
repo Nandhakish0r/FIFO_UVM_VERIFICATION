@@ -227,7 +227,7 @@ endmodule
 
 **Design Notes:**
 - Lower 3 bits of pointers `[2:0]` address the 8 memory locations
-- MSB `[3]` tracks wrap-around for full/empty disambiguation
+- MSB `[3]` tracks wrap-around for the full/empty disambiguation
 - Reset clears both pointers and output register; memory contents are preserved
 - Full/empty flags are combinationally generated (no clock latency)
 
